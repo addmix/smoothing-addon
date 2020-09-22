@@ -118,7 +118,7 @@ func _RefreshTransform():
 		return
 	
 	_m_trPrev = _m_trCurr
-	_m_trCurr = _m_Target.transform
+	_m_trCurr = _m_Target.get_global_transform()
 	
 func _IsTargetParent(var node):
 	if node == _m_Target:
